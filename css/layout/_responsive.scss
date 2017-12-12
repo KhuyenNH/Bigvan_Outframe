@@ -1,0 +1,175 @@
+/*-----------------------
+        Responsive for device < 768px
+-----------------------------------------*/
+@media screen and (max-width: 767px) {
+    img {
+        width: 100%;
+    }
+    .is_pc {
+        display: none;
+    }
+    .is_sp {
+        display: inherit;
+    }
+    .wrapper {
+        min-width: inherit;
+    }
+    .container {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    .note_section {
+        padding-top: 2.2rem;
+        font-size: 3.2vw;
+        line-height: 1.8;
+        .note {
+            display: inline-block;
+            padding: 5px 15px;
+            background: $color-primary;
+            color: $color-a;
+            margin-bottom: 0.8rem;
+        }
+    }
+    .title_h2 {
+        padding-top: 6vw;
+        padding-bottom: 5.2vw;
+    }
+    .title_h3 {
+        font-size: 3.6vw;
+    }
+    .text {
+        font-size: 3.2vw;
+    }
+
+
+    /*    Header
+    ----------------------------------*/
+    /*    local_01
+    ----------------------------------*/
+    #local_01 {
+        padding: 4.8vw 0;
+        .items {
+            width: 100%;
+            text-align: left;
+            float: none;
+        }
+        .avatar {
+            text-align: center;
+            padding-right: 0;
+            .imgAvatar {
+                float: none;
+                position: relative;
+                margin: auto;
+                width: 42%;
+                height: inherit;
+            }
+        }
+        .listDot {
+            li {
+                opacity: 0.8;
+                position: absolute;
+                width: 30%;
+                &:nth-child(1) {
+                    top: 12%;
+                    left: 0;
+                }
+                &:nth-child(2) {
+                    top: 12%;
+                    right: 2%;
+                }
+                &:nth-child(3) {
+                    bottom: 12%;
+                    left: 0;
+                }
+                &:nth-child(4) {
+                    bottom: 12%;
+                    right: 2%;
+                }
+            }
+        }
+    }
+    /*    local_02
+    ----------------------------------*/
+    #local_02 {
+        padding-bottom: 10vw;
+        .row_01 {
+            display: flex;
+            flex-direction: column;
+            .avatar {
+                order: 1;
+                padding-top: 9.5vw;
+                left: 0;
+                padding-left: 3%;
+                padding-right: 3%;
+            }
+            .description {
+                padding-top: 4vw;
+                padding-right: 0;
+                order: 2;
+            }
+            .detailZoom {
+                li {
+                    width: 34%;
+                    position: absolute;
+                    &:first-child {
+                        top: 26.5%;
+                        left: -2.3%;
+                    }
+                    &:last-child {
+                        top: 4.5%;
+                        right: -4%;
+                    }
+                }
+            }
+        }
+        .items {
+            float: none;
+            width: 100%;
+        }
+        .row_02 {
+            padding-top: 12vw;
+            .description {
+                padding-top: 3.5vw;
+            }
+        }
+        .row_03 {
+            .description {
+                padding-top: 3.5vw;
+            }
+        }
+    }
+    /*    local_03
+    ----------------------------------*/
+    #local_03 {
+        padding: 9.3vw 0;
+        text-align: left;
+        .description {
+            max-width: 100%;
+            padding-top: 4.6vw;
+        }
+        .note {
+            text-align: left;
+            padding-top: 2.9vw;
+            padding-left: 3.3vw;
+            text-indent: -3.3vw;
+            font-size: 3.2vw;
+            line-height: 1.6;
+        }
+        .listItemsThumb {
+            padding-top: 0;
+        }
+        .listItems {
+            padding-top: 5.2vw;
+            flex-wrap: wrap;
+            &.details {
+                top: 0;
+                .items {
+                    &:nth-child(2) {
+                        position: relative;
+                        right: -2.4vw;
+                    }
+                }
+            }
+        }
+    }
+}

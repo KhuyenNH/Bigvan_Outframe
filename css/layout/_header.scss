@@ -1,0 +1,14 @@
+/*    Header
+----------------------------------*/
+#header {
+    @extend %clearfix;
+    background: url("../images/bg_main.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title_main {
+    transition: all 2s;
+    opacity: 0;
+}

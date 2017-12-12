@@ -1,0 +1,89 @@
+/*------------------- Wraper -------------------*/
+.wrapper {
+    // width: 150rem;
+    margin: auto;
+    overflow: hidden;
+    min-width: 978px;
+    background: #fffffc;
+}
+.row_clear {
+    @extend %clearfix;
+}
+.container {
+    @extend %clearfix;
+    max-width: 948px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+/*------------------- Component -------------------*/
+.title_h2 {
+    font-size: 2.4rem;
+    color: $color-primary;
+    line-height: 1.8;
+    font-weight: bold;
+    padding-bottom: 2.5rem;
+}
+.title_h3 {
+    font-size: 2rem;
+    line-height: 1.8;
+    color: $color-primary;
+    font-weight: bold;
+}
+.note_section {
+    padding-top: 2.2rem;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    .note {
+        font-weight: bold;
+        display: inline-block;
+        padding: 3px 7px 1px;
+        background: $color-primary;
+        color: $color-a;
+        margin-bottom: 0.8rem;
+    }
+}
+.text {
+    font-size: 1.4rem;
+    line-height: 1.8;
+}
+.line {
+    padding: 20px 0;
+    text-align: center;
+}
+.fading-focus,
+.fading-focus2 {
+    opacity: 0;
+    transition: all 1s;
+    &.active {
+        opacity: 1!important;
+    }
+}
+.fading-focus_delay {
+    opacity: 0;
+    transition: all 1s;
+    @for $i from 1 through 4 {
+        &:nth-child(#{$i}) {
+            transition-delay: 500ms * $i;
+        }
+    }
+    &.active {
+        opacity: 1!important;
+    }
+}
+@keyframes fadeinout {
+    0%,
+    100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+/*------------------- List -------------------*/
+.listItems {
+    @extend %clearfix;
+    // .items {
+    //     float: left;
+    // }
+}
